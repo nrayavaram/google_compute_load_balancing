@@ -5,7 +5,7 @@ provider "google" {
 
 
 resource "google_compute_forwarding_rule" "example" {
-  name                  = "${local.resource_prefix}"
+  name                  = "l7-ilb-forwarding-rule"
   ip_protocol           = "TCP"
   load_balancing_scheme = "INTERNAL_MANAGED"
   port_range            = "443"
