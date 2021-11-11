@@ -1,0 +1,10 @@
+{
+	"records": [
+		{
+			"key": "google_compute_firewall",
+			"source": "./google_compute_load_balancing.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/google_compute_load_balancing/google_compute_load_balancing.sentinel"
+		}
+	]
+}

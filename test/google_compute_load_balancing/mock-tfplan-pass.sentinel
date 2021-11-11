@@ -1,0 +1,228 @@
+terraform_version = "1.0.10"
+
+planned_values = {
+	"outputs": {},
+	"resources": {
+		"google_compute_forwarding_rule.example": {
+			"address":        "google_compute_forwarding_rule.example",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "example",
+			"provider_name":  "registry.terraform.io/hashicorp/google",
+			"tainted":        false,
+			"type":           "google_compute_forwarding_rule",
+			"values": {
+				"all_ports":              null,
+				"allow_global_access":    null,
+				"backend_service":        null,
+				"description":            null,
+				"ip_protocol":            "TCP",
+				"is_mirroring_collector": null,
+				"labels":                 null,
+				"load_balancing_scheme":  "INTERNAL_MANAGED",
+				"name":                   "l7-ilb-forwarding-rule",
+				"port_range":             "443",
+				"ports":                  null,
+				"service_label":          null,
+				"target":                 null,
+				"timeouts":               null,
+			},
+		},
+	},
+}
+
+variables = {
+	"access_token": {
+		"name":  "access_token",
+		"value": "REDACTED_SENSITIVE",
+	},
+}
+
+resource_changes = {
+	"google_compute_forwarding_rule.example": {
+		"address": "google_compute_forwarding_rule.example",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"all_ports":              null,
+				"allow_global_access":    null,
+				"backend_service":        null,
+				"description":            null,
+				"ip_protocol":            "TCP",
+				"is_mirroring_collector": null,
+				"labels":                 null,
+				"load_balancing_scheme":  "INTERNAL_MANAGED",
+				"name":                   "l7-ilb-forwarding-rule",
+				"port_range":             "443",
+				"ports":                  null,
+				"service_label":          null,
+				"target":                 null,
+				"timeouts":               null,
+			},
+			"after_unknown": {
+				"creation_timestamp": true,
+				"id":                 true,
+				"ip_address":         true,
+				"label_fingerprint":  true,
+				"network":            true,
+				"network_tier":       true,
+				"project":            true,
+				"region":             true,
+				"self_link":          true,
+				"service_name":       true,
+				"subnetwork":         true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "example",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_compute_forwarding_rule",
+	},
+}
+
+output_changes = {}
+
+raw = {
+	"configuration": {
+		"provider_config": {
+			"google": {
+				"expressions": {
+					"access_token": {
+						"references": [
+							"var.access_token",
+						],
+					},
+					"project": {
+						"constant_value": "airline1-sabre-wolverine",
+					},
+				},
+				"name": "google",
+			},
+		},
+		"root_module": {
+			"resources": [
+				{
+					"address": "google_compute_forwarding_rule.example",
+					"expressions": {
+						"ip_protocol": {
+							"constant_value": "TCP",
+						},
+						"load_balancing_scheme": {
+							"constant_value": "INTERNAL_MANAGED",
+						},
+						"name": {
+							"constant_value": "l7-ilb-forwarding-rule",
+						},
+						"port_range": {
+							"constant_value": "443",
+						},
+					},
+					"mode":                "managed",
+					"name":                "example",
+					"provider_config_key": "google",
+					"schema_version":      0,
+					"type":                "google_compute_forwarding_rule",
+				},
+			],
+			"variables": {
+				"access_token": {
+					"description": "access token",
+					"sensitive":   true,
+				},
+			},
+		},
+	},
+	"format_version": "0.2",
+	"planned_values": {
+		"root_module": {
+			"resources": [
+				{
+					"address":          "google_compute_forwarding_rule.example",
+					"mode":             "managed",
+					"name":             "example",
+					"provider_name":    "registry.terraform.io/hashicorp/google",
+					"schema_version":   0,
+					"sensitive_values": {},
+					"type":             "google_compute_forwarding_rule",
+					"values": {
+						"all_ports":              null,
+						"allow_global_access":    null,
+						"backend_service":        null,
+						"description":            null,
+						"ip_protocol":            "TCP",
+						"is_mirroring_collector": null,
+						"labels":                 null,
+						"load_balancing_scheme":  "INTERNAL_MANAGED",
+						"name":                   "l7-ilb-forwarding-rule",
+						"port_range":             "443",
+						"ports":                  null,
+						"service_label":          null,
+						"target":                 null,
+						"timeouts":               null,
+					},
+				},
+			],
+		},
+	},
+	"resource_changes": [
+		{
+			"address": "google_compute_forwarding_rule.example",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"all_ports":              null,
+					"allow_global_access":    null,
+					"backend_service":        null,
+					"description":            null,
+					"ip_protocol":            "TCP",
+					"is_mirroring_collector": null,
+					"labels":                 null,
+					"load_balancing_scheme":  "INTERNAL_MANAGED",
+					"name":                   "l7-ilb-forwarding-rule",
+					"port_range":             "443",
+					"ports":                  null,
+					"service_label":          null,
+					"target":                 null,
+					"timeouts":               null,
+				},
+				"after_sensitive": {},
+				"after_unknown": {
+					"creation_timestamp": true,
+					"id":                 true,
+					"ip_address":         true,
+					"label_fingerprint":  true,
+					"network":            true,
+					"network_tier":       true,
+					"project":            true,
+					"region":             true,
+					"self_link":          true,
+					"service_name":       true,
+					"subnetwork":         true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "example",
+			"provider_name": "registry.terraform.io/hashicorp/google",
+			"type":          "google_compute_forwarding_rule",
+		},
+	],
+	"terraform_version": "1.0.10",
+	"variables": {
+		"access_token": {
+			"value": "REDACTED_SENSITIVE",
+		},
+	},
+}
