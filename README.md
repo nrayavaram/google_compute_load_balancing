@@ -28,7 +28,11 @@ Sentinel v0.18.4
  sentinel test <sentinel file>
 example : 
  $ sentinel test google_compute_load_balancing.sentinel 
+
  PASS - google_compute_load_balancing.sentinel 
- PASS - test/google_compute_load_balancing/fail.hcl 
+
+ PASS - test/google_compute_load_balancing/fail.hcl
+
  PASS - test/google_compute_load_balancing/null.hcl 
+ 
  PASS - test/google_compute_load_balancing/success.hcl
