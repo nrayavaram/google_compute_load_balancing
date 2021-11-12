@@ -21,11 +21,12 @@ Terraform v1.0.7
 Sentinel v0.18.4
 
 #### modules to import:
-*import "tfplan-functions"
-*import "strings"
-*import "types"
+* import "tfplan-functions"
+* import "strings"
+* import "types"
+
 #### Testing a Policy
- sentinel test <sentinel file>
+     sentinel test <sentinel file>
 example : 
  $ sentinel test google_compute_load_balancing.sentinel 
 
