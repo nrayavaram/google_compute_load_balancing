@@ -17,7 +17,7 @@
 #### Terraform version 
 Terraform v1.0.7
 
-#### sentinel versions 
+#### sentinel versions
 Sentinel v0.18.4 
 
 #### modules to import:
